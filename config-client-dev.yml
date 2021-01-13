@@ -1,0 +1,16 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: config-client
+
+eureka:
+  client:
+    #eureka服务地址
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+feign:
+  hystrix:
+    #开启断路器
+    enabled: true
